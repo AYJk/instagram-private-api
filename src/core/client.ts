@@ -23,6 +23,7 @@ import { SimulateService } from '../services/simulate.service';
 import { DiscoverRepository } from '../repositories/discover.repository';
 import { ConsentRepository } from '../repositories/consent.repository';
 import { UserRepository } from '../repositories/user.repository';
+import { BluesGraphQLRepository } from '../repositories/bluesgraphql.repository';
 import { TagRepository } from '../repositories/tag.repository';
 import { SearchService } from '../services/search.service';
 import { StoryService } from '../services/story.service';
@@ -64,6 +65,7 @@ export class IgApiClient {
   public tag = new TagRepository(this);
   public upload = new UploadRepository(this);
   public user = new UserRepository(this);
+  public bluesGraphQL = new BluesGraphQLRepository(this);
   public zr = new ZrRepository(this);
   public live = new LiveRepository(this);
   public location = new LocationRepository(this);

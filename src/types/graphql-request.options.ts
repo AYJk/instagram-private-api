@@ -1,3 +1,8 @@
+export interface BluesGraphQLRequestOptions {
+  query_hash: string;
+  variables: any;
+}
+
 export interface GraphQLRequestOptions {
   surface: { name?: InsightsSurface; friendlyName: InsightsFriendlyName };
   accessToken?: string;
